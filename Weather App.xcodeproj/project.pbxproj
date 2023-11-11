@@ -12,6 +12,9 @@
 		EBC004D82AFFA4D7002A5D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004D72AFFA4D7002A5D29 /* ViewController.swift */; };
 		EBC004DD2AFFA4D9002A5D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC004DC2AFFA4D9002A5D29 /* Assets.xcassets */; };
 		EBC004E02AFFA4D9002A5D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC004DE2AFFA4D9002A5D29 /* LaunchScreen.storyboard */; };
+		EBC004E82B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */; };
+		EBC004EA2B002FD8002A5D29 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */; };
+		EBC004EC2B00314D002A5D29 /* Image+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004EB2B00314D002A5D29 /* Image+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EBC004DC2AFFA4D9002A5D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC004DF2AFFA4D9002A5D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBC004E12AFFA4D9002A5D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		EBC004EB2B00314D002A5D29 /* Image+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				EBC004D32AFFA4D7002A5D29 /* AppDelegate.swift */,
 				EBC004D52AFFA4D7002A5D29 /* SceneDelegate.swift */,
 				EBC004D72AFFA4D7002A5D29 /* ViewController.swift */,
+				EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */,
+				EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */,
+				EBC004EB2B00314D002A5D29 /* Image+extensions.swift */,
 				EBC004DC2AFFA4D9002A5D29 /* Assets.xcassets */,
 				EBC004DE2AFFA4D9002A5D29 /* LaunchScreen.storyboard */,
 				EBC004E12AFFA4D9002A5D29 /* Info.plist */,
@@ -136,6 +145,9 @@
 			files = (
 				EBC004D82AFFA4D7002A5D29 /* ViewController.swift in Sources */,
 				EBC004D42AFFA4D7002A5D29 /* AppDelegate.swift in Sources */,
+				EBC004E82B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift in Sources */,
+				EBC004EC2B00314D002A5D29 /* Image+extensions.swift in Sources */,
+				EBC004EA2B002FD8002A5D29 /* Color+Extensions.swift in Sources */,
 				EBC004D62AFFA4D7002A5D29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
