@@ -15,6 +15,8 @@
 		EBC004E82B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */; };
 		EBC004EA2B002FD8002A5D29 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */; };
 		EBC004EC2B00314D002A5D29 /* Image+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004EB2B00314D002A5D29 /* Image+extensions.swift */; };
+		EBC004EE2B00F018002A5D29 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004ED2B00F018002A5D29 /* DailyForecastTableViewCell.swift */; };
+		EBC004F02B00F828002A5D29 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC004EF2B00F828002A5D29 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		EBC004EB2B00314D002A5D29 /* Image+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+extensions.swift"; sourceTree = "<group>"; };
+		EBC004ED2B00F018002A5D29 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		EBC004EF2B00F828002A5D29 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +67,11 @@
 				EBC004D32AFFA4D7002A5D29 /* AppDelegate.swift */,
 				EBC004D52AFFA4D7002A5D29 /* SceneDelegate.swift */,
 				EBC004D72AFFA4D7002A5D29 /* ViewController.swift */,
+				EBC004ED2B00F018002A5D29 /* DailyForecastTableViewCell.swift */,
 				EBC004E72B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift */,
 				EBC004E92B002FD8002A5D29 /* Color+Extensions.swift */,
 				EBC004EB2B00314D002A5D29 /* Image+extensions.swift */,
+				EBC004EF2B00F828002A5D29 /* UIView+Extensions.swift */,
 				EBC004DC2AFFA4D9002A5D29 /* Assets.xcassets */,
 				EBC004DE2AFFA4D9002A5D29 /* LaunchScreen.storyboard */,
 				EBC004E12AFFA4D9002A5D29 /* Info.plist */,
@@ -145,9 +151,11 @@
 			files = (
 				EBC004D82AFFA4D7002A5D29 /* ViewController.swift in Sources */,
 				EBC004D42AFFA4D7002A5D29 /* AppDelegate.swift in Sources */,
+				EBC004EE2B00F018002A5D29 /* DailyForecastTableViewCell.swift in Sources */,
 				EBC004E82B00281A002A5D29 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				EBC004EC2B00314D002A5D29 /* Image+extensions.swift in Sources */,
 				EBC004EA2B002FD8002A5D29 /* Color+Extensions.swift in Sources */,
+				EBC004F02B00F828002A5D29 /* UIView+Extensions.swift in Sources */,
 				EBC004D62AFFA4D7002A5D29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

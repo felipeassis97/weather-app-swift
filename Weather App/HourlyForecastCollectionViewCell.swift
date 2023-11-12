@@ -7,85 +7,80 @@
 
 import UIKit
 
+
 class HourlyForecastCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "HourlyForecast"
+    static let indentifier: String = "HourlyForecast"
+    
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [hourLabel,
+                                                       iconImageView,
+                                                       termperatureLabel])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 4
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 8,
+                                                                     leading: 8,
+                                                                     bottom: 8,
+                                                                     trailing: 8)
+        stackView.layer.borderWidth = 1
+        stackView.layer.borderColor = UIColor.contrastColor?.cgColor
+        stackView.layer.cornerRadius = 20
+        return stackView
+    }()
+    
+    private lazy var hourLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.contrastColor
+        label.text = "13:00"
+        label.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private lazy var termperatureLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.contrastColor
+        label.text = "25°C"
+        label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private lazy var iconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "sunIcon")
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    private lazy var weatherItemHour : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "13:00"
-        label.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
-        label.textColor = .contrastColor
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var weatherItemDegree : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "25°C"
-        label.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
-        label.textColor = .contrastColor
-        label.textAlignment = .center
-        return label
-    }()
-    
-    private lazy var weatherItemIcon : UIImageView = {
-        let icon = UIImageView()
-        icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.image = .weatherIcon
-        icon.contentMode = .scaleAspectFit
-        return icon
-    }()
-    
-    private lazy var weatherItem : UIStackView = {
-        let weatherItem = UIStackView(arrangedSubviews: [weatherItemHour, weatherItemIcon, weatherItemDegree])
-        weatherItem.translatesAutoresizingMaskIntoConstraints = false
-        weatherItem.axis = .vertical
-        weatherItem.layer.cornerRadius = 20
-        weatherItem.layer.borderWidth = 1
-        weatherItem.layer.borderColor = UIColor.contrastColor?.cgColor
-        
-        weatherItem.isLayoutMarginsRelativeArrangement = true
-        weatherItem.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8)
-        
-        return weatherItem
-    }()
-    
-    private func setupView(){
+    private func setupView() {
         setHierarchy()
         setConstraints()
     }
     
-    private func setHierarchy(){
-        contentView.addSubview(weatherItem)
+    private func setHierarchy() {
+        contentView.addSubview(stackView)
     }
     
-    private func setConstraints(){
-       
-        NSLayoutConstraint.activate([
-            weatherItemIcon.heightAnchor.constraint(equalToConstant: 32),
-            weatherItemIcon.widthAnchor.constraint(equalToConstant: 32),
-        ])
+    private func setConstraints() {
+        stackView.setConstraintsToParent(contentView)
         
         NSLayoutConstraint.activate([
-            weatherItem.topAnchor.constraint(equalTo: contentView.topAnchor),
-            weatherItem.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            weatherItem.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            weatherItem.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            iconImageView.heightAnchor.constraint(equalToConstant: 33)
         ])
-
     }
 }
